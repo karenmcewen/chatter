@@ -12,8 +12,10 @@
             {
                 @Html.AntiForgeryToken()
                 <h4>Use a local account to log in.</h4>
+                <p>We're sorry. This option is not available. </p>
+                <p>Please login with another service.</p>
                 <hr />
-                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                @*@Html.ValidationSummary(true, "", new { @class = "text-danger" })
                 <div class="form-group">
                     @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
                     <div class="col-md-10">
@@ -43,7 +45,7 @@
                 </div>
                 <p>
                     @Html.ActionLink("Register as a new user", "Register")
-                </p>
+                </p>*@
                 @* Enable this once you have account confirmation enabled for password reset functionality
                     <p>
                         @Html.ActionLink("Forgot your password?", "ForgotPassword")
