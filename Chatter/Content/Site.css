@@ -25,5 +25,8 @@ textarea {
 
 .navbar {
    background-image: url('../Images/bluegoldglitter.jpg');
- 
+
 }
+ .navbar-inverse {
+     color:aqua;
+ }
