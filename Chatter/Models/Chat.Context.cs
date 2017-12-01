@@ -13,10 +13,10 @@ namespace Chatter.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class ChatEntities : DbContext
+    public partial class GlitterChatter : DbContext
     {
-        public ChatEntities()
-            : base("name=ChatEntities")
+        public GlitterChatter()
+            : base("name=GlitterChatter")
         {
         }
     
@@ -25,7 +25,6 @@ namespace Chatter.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<C__MigrationHistory> C__MigrationHistory { get; set; }
         public virtual DbSet<AspNetRole> AspNetRoles { get; set; }
         public virtual DbSet<AspNetUserClaim> AspNetUserClaims { get; set; }
         public virtual DbSet<AspNetUserLogin> AspNetUserLogins { get; set; }
